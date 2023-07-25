@@ -13,11 +13,11 @@
 <body>
     <header>
         <div id="navegacao">
-           <a href="index.html"><h2>Eudes Jordão</h2></a>
+           <a class="linkIndex" href="index.html"><h2>Eudes Jordão</h2></a>
             <nav>
                 <ul>
                     <li><a class="linksNav" href="#sobreMim">Sobre Mim</a></li>
-                    <li><a class="linksNav" href="#projetos">Projetos</a></li>
+                    <li><a class="linksNav" href="#containerProjetos">Projetos</a></li>
                     <li><a class="linksNav" href="#conhecimentos">Conhecimentos</a></li>
                     <li><a class="linksNav" href="#contato">Contato</a></li>
                 </ul>
@@ -49,14 +49,14 @@
         <div id="containerProjetos">
             <h3>Meus Projetos</h3>
             <div class="projeto">
-              <div class="slide">
-                <img src="Pictures/projetos/FullStack Angular/main.png">
-                <img src="Pictures/projetos/FullStack Angular/company.png">
-                <img src="Pictures/projetos/FullStack Angular/employee.png">
+              <div class="containerSlide">
+                <img class="slide" src="Pictures/projetos/FullStack Angular/main.png">
+                <img class="slide" src="Pictures/projetos/FullStack Angular/company.png">
+                <img class="slide" src="Pictures/projetos/FullStack Angular/employee.png">
               </div>
-              <div class="seta">
-                <button ><p><</p></button>
-                <button ><p>></p></button>
+              <div class="containerSeta">
+                <button id="setaEsquerda" onclick="slideEsquerda()"><p><</p></button>
+                <button id="setaDireita" onclick="slideDireita()"><p>></p></button>
               </div>
               <div class="textoProjeto">
                 <p>
@@ -109,5 +109,7 @@
             <a href="https://api.whatsapp.com/send?phone=5581997221573"><img src="Pictures/whatsapp.png" alt="Whatsapp"></a>
         </div>
     </footer>
+
+    <script src="cod.js"></script>
 </body>
 </html>

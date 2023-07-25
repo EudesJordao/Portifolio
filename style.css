@@ -24,7 +24,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000; 
   }
   
@@ -109,8 +109,8 @@ a{
 
 #sobreMim {
     background-color: #333;
-    max-width: 100vw;
     height: 500px;
+    max-width: 100vw;
     overflow: hidden;
 }
   
@@ -158,42 +158,42 @@ a{
     padding: 0px 0px 70px 0px;
 }
 
-.slide img{
+.containerSlide img{
     width: 1000px;
     display: none;
     border: 10px solid #555;
     border-radius: 10px;
 }
 
-.slide img:first-child{
+.containerSlide img:first-child{
     width: 1000px;
     display: block;
 }
 
-.slide{
+.containerSlide{
     display: flex;
     justify-content: center;
     margin: 50px 0 10px 0;
 }
 
-.seta{
+.containerSeta{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.seta button{
+.containerSeta button{
     margin: 10px;
     border-radius: 5px;
     border: none;
 }
 
-.seta button:hover{
+.containerSeta button:hover{
     cursor: pointer;
 }
 
-.seta p{
+.containerSeta p{
     margin: 0 10px;
     padding: 10px;
     font-size: 20px;
@@ -315,4 +315,230 @@ a{
     margin: 15px 50px;
     transition: 0.5s;
     border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px){
+    
+    /*Header*/
+
+    #navegacao {
+        flex-direction: column;
+    }
+      
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    /*Main*/
+
+    /*Apresentação*/
+
+    #apresentacao{
+        margin-top: 100px;
+        max-width: 100vw;
+    }
+    
+    #texotApresentacao{
+        margin-right: auto;
+        margin-left: 30px;
+    }
+    
+    #texotApresentacao p:first-child{
+        font-size: 20px;
+    }
+    
+    #texotApresentacao h1{
+        font-size: 50px;
+    }
+    
+    #texotApresentacao p{
+        font-size: 18px;
+    }
+
+    #apresentacao img{
+        width: 400px;
+        border-radius: 140px;
+    }
+    /*Sobre Mim*/
+
+    #sobreMim {
+        height: 500px;
+    }
+      
+    #sobreMim img {
+        width: 200px;
+        border-radius: 20%;
+        margin: 130px 50px 0 50px; 
+    }
+      
+    #textoSobre {
+        margin-left: 10px;
+        width: calc(100% - 310px); 
+    }
+      
+    #textoSobre h3 {
+        font-size: 30px;
+    }
+    
+    #textoSobre p{
+       margin-top: 30px;
+       font-size: 18px;
+    }
+
+    /*Projetos*/
+
+
+    .projeto{
+        padding: 0px;
+    }
+
+    .containerSlide img{
+        max-width: 600px;
+    }
+
+    .containerSlide{
+        margin: 0 0 10px 0;
+    }
+
+    .textoProjeto{
+        max-width: 600px;
+    }
+
+    #proximoProjeto p{
+        margin-bottom: 20px;
+    }
+
+    #proximoProjeto img{
+        width: 500px;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    /*Conhecimento*/
+
+    #conhecimentos{
+        height: 1200px;
+    }
+
+    #imagemConhecimentos img:nth-child(2n + 1){
+        width: 180px;
+        margin: 30px 30px 30px 148px;
+        padding: 30px;
+    }
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1050px){
+    
+    /*Header*/
+
+    #navegacao {
+        flex-direction: column;
+    }
+      
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    /*Main*/
+
+    /*Apresentação*/
+
+    #apresentacao{
+        margin-top: 100px;
+        max-width: 100vw;
+    }
+    
+    #texotApresentacao{
+        margin-right: auto;
+        margin-left: 50px;
+    }
+    
+    #texotApresentacao p:first-child{
+        font-size: 20px;
+    }
+    
+    #texotApresentacao h1{
+        font-size: 50px;
+    }
+    
+    #texotApresentacao p{
+        font-size: 18px;
+    }
+
+    #apresentacao img{
+        width: 450px;
+        border-radius: 140px;
+    }
+
+    /*Sobre Mim*/
+
+    #sobreMim {
+        height: 400px;
+    }
+      
+    #sobreMim img {
+        width: 250px;
+        border-radius: 50%;
+        margin: 70px 50px 0 50px; 
+    }
+      
+    #textoSobre {
+        margin-left: 10px;
+        width: calc(100% - 360px); 
+    }
+      
+    #textoSobre h3 {
+        font-size: 30px;
+    }
+    
+    #textoSobre p{
+       margin-top: 30px;
+       font-size: 18px;
+    }
+
+    /*Projetos*/
+
+
+    .projeto{
+        padding: 0px;
+    }
+
+    .containerSlide img{
+        max-width: 700px;
+    }
+
+    .containerSlide{
+        margin: 0 0 10px 0;
+    }
+
+    .textoProjeto{
+        max-width: 700px;
+    }
+
+    #proximoProjeto p{
+        margin-bottom: 20px;
+    }
+
+    /*Conhecimento*/
+
+    #conhecimentos{
+        height: 1200px;
+    }
+
+    #imagemConhecimentos img:nth-child(2n + 1){
+        width: 180px;
+        margin: 30px 30px 30px 300px;
+        padding: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1330px){
+    /*Apresentação*/
+
+    #texotApresentacao{
+        margin-right: auto;
+        margin-left: 50px;
+    }
 }

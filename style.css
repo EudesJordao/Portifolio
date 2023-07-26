@@ -123,20 +123,21 @@ a{
   
 #textoSobre {
     float: left;
-    margin-left: 20px;
+    margin-left: 50px;
     width: calc(100% - 690px); 
 }
   
 #textoSobre h3 {
-    margin: 30px 0;
+    margin: 60px 0px 0px 0px;
     font-size: 50px;
     text-align: left;
 }
 
 #textoSobre p{
    text-align: left;
-   margin-top: 40px;
-   font-size: 25px;
+   margin-top: 50px;
+   font-size: 20px;
+   width: 1000px;
 }
 
 /*Projetos*/

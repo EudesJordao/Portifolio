@@ -88,7 +88,7 @@ a{
 }
 
 #texotApresentacao p:first-child{
-    font-size: 30px;
+    font-size: 23px;
 }
 
 #texotApresentacao h1{
@@ -96,7 +96,7 @@ a{
 }
 
 #texotApresentacao p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #apresentacao img{
@@ -128,14 +128,14 @@ a{
 }
   
 #textoSobre h3 {
-    margin: 60px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     font-size: 50px;
     text-align: left;
 }
 
 #textoSobre p{
    text-align: left;
-   margin-top: 50px;
+   margin-top: 30px;
    font-size: 20px;
    width: 1000px;
 }
@@ -319,7 +319,7 @@ a{
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 600px){
+@media screen and (min-width: 300px) and (max-width: 599px){
 
     /*Header*/
 
@@ -373,15 +373,6 @@ a{
         border-radius: 140px;
     }
 
-    @media screen and (min-width: 300px) and (max-width: 400px){
-        #apresentacao img{
-            margin-top: 30px;
-            width: 300px;
-            border-radius: 140px;
-        }
-    }
-
-    
     /*Sobre Mim*/
 
     #sobreMim {
@@ -408,9 +399,9 @@ a{
     }
 
     #textoSobre p{
-    margin-top: 30px;
-    font-size: 18px;
-    text-align: center;
+        margin-top: 30px;
+        font-size: 18px;
+        text-align: center;
     }
 
     /*Projetos*/
@@ -440,16 +431,6 @@ a{
         width: 300px;
         height: 250px;
         border-radius: 30px;
-    }
-
-    @media screen and (min-width: 300px) and (max-width: 400px){
-        .textoProjeto{
-            max-width: 300px;
-        }
-
-        .containerSlide img{
-            max-width: 300px;
-        }
     }
 
     /*Conhecimento*/
@@ -487,6 +468,25 @@ a{
         border-radius: none;
     }
 
+    @media screen and (min-width: 300px) and (max-width: 400px){
+        #apresentacao img{
+            margin-top: 30px;
+            width: 300px;
+            border-radius: 140px;
+        }
+
+        .textoProjeto{
+            max-width: 300px;
+        }
+
+        .containerSlide img{
+            max-width: 300px;
+        }
+
+        #sobreMim {
+            height: 850px;
+        }
+    }
 
 }
 
@@ -599,9 +599,15 @@ a{
         padding: 30px;
     }
 
+    @media screen and (min-width: 600px) and (max-width: 640px){
+        #sobreMim {
+            height: 550px;
+        }
+    }
+
 }
 
-@media screen and (min-width: 850px) and (max-width: 1050px){
+@media screen and (min-width: 850px) and (max-width: 1160px){
     
     /*Header*/
 
@@ -713,5 +719,11 @@ a{
     #texotApresentacao{
         margin-right: auto;
         margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1674px){
+    #textoSobre p{
+        width: auto;
     }
 }

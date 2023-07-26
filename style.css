@@ -317,6 +317,178 @@ a{
     border-radius: 10px;
 }
 
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+
+    /*Header*/
+
+    #navegacao {
+        flex-direction: column;
+    }
+
+    .linkIndex h2{
+        margin: 0px;
+    }
+    
+    nav ul li {
+        margin-right: 10px;
+        display: none;
+    }
+
+    /*Main*/
+
+    /*Apresentação*/
+
+    #apresentacao{
+        margin-top: 100px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #texotApresentacao{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #texotApresentacao p:first-child{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #texotApresentacao h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #texotApresentacao p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #apresentacao img{
+        margin-top: 30px;
+        width: 400px;
+        border-radius: 140px;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 400px){
+        #apresentacao img{
+            margin-top: 30px;
+            width: 300px;
+            border-radius: 140px;
+        }
+    }
+
+    
+    /*Sobre Mim*/
+
+    #sobreMim {
+        height: 800px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #sobreMim img {
+        width: 200px;
+        border-radius: 20%;
+        margin: 50px 50px 0 50px; 
+    }
+    
+    #textoSobre {
+        margin: 0 20px;
+        width: auto; 
+    }
+    
+    #textoSobre h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #textoSobre p{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    }
+
+    /*Projetos*/
+
+
+    .projeto{
+        padding: 0px;
+    }
+
+    .containerSlide img{
+        max-width: 400px;
+    }
+
+    .containerSlide{
+        margin: 0 0 10px 0;
+    }
+
+    .textoProjeto{
+        max-width: 400px;
+    }
+
+    #proximoProjeto p{
+        margin-bottom: 20px;
+    }
+
+    #proximoProjeto img{
+        width: 300px;
+        height: 250px;
+        border-radius: 30px;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 400px){
+        .textoProjeto{
+            max-width: 300px;
+        }
+
+        .containerSlide img{
+            max-width: 300px;
+        }
+    }
+
+    /*Conhecimento*/
+
+    #conhecimentos{
+        height: 1800px;
+    }
+
+    #imagemConhecimentos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagemConhecimentos img{
+        width: 150px;
+    }
+
+    /*Footer*/
+
+    #contato{
+        height: 200px;
+    }
+
+    #contato img{
+        width: 65px;
+        margin: 20px;
+    }
+
+    #contato img:hover{
+        background-color: none;
+        padding: none;
+        width: none;
+        margin: none;
+        transition: none;
+        border-radius: none;
+    }
+
+
+}
+
 @media screen and (min-width: 600px) and (max-width: 850px){
     
     /*Header*/
